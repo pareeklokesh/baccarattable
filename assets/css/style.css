@@ -1,0 +1,488 @@
+:root {
+	--maincolor:#4bb84d;
+}
+* {
+	font-family: 'Poppins', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+body {
+	background: url('../img/bg.png') no-repeat !important;
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-position: center;
+  background-position: center !important;
+  background-size: cover !important;
+  min-height: 100vh;
+  position: relative;
+}
+img {max-width: 100%;}
+.winpoint {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380);
+  padding: 5px 8px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.winpoint i {
+  background: #3c2909;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+}
+.winpoint p {
+  background: #3c2909;
+  text-transform: uppercase;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-left: 8px;
+  padding: 2px 22px;
+}
+.winpoint p strong, .winpoint p span {
+  font-size: 16px;
+  font-weight: 600;
+  font-size: calc(0.7rem + ((1vw - 7.68px) * 0.6944));
+}
+.winpoint p span {
+  padding-left: 15px;
+  color: #ffde00;
+}
+.backbtn i {
+  color: #3c2909;
+  font-size: 30px;
+  font-size: calc(1.6rem + ((1vw - 7.68px) * 0.6944));
+}
+.backbtn {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 #3c2909;
+  width: calc(1.9375rem + ((1vw - 7.68px) * 3.9063));
+height: calc(1.9375rem + ((1vw - 7.68px) * 3.9063));
+}
+.addcash-icon {
+  width: 80px;
+  position: absolute;
+  left: -26px;
+  top: -11px;
+}
+.addcash-text {
+  color: #3c2909;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 8px 20px;
+  padding-left: 60px;
+}
+.baccarat-table {
+  background: url('../img/baccarattable.png') no-repeat;
+  height: 70%;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+}
+.userPoint {
+  width: 100%;
+  color: #3c2909;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 2px 8px;
+  text-align: center;
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380);
+  border-radius: 25px;
+  display: block;
+  margin-top: 12px;
+  box-shadow: 0 2px 9px #000;
+  font-size: calc(0.7rem + ((1vw - 7.68px) * 0.6944));
+}
+.playerCard {
+  position: absolute;
+  top: -35%;
+  left: -18%;
+  right: 0;
+  width: 7.4%;
+  margin: 0px auto;
+}
+.playercard-border {
+  border: 1px dashed #f0c869;
+  padding: 5px;
+  border-radius: 6px;
+}
+.bankercard {
+  left: 0;
+  right: -18%;
+}
+.playerpoint h2 {
+  font-weight: 700;
+  font-size: 26px;
+  font-size: calc(1.25rem + ((1vw - 7.68px) * 1.2118));
+}
+.playerpoint span {
+  color: #dbe64c;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+}
+.playertotalpoint {
+  width: 45%;
+  bottom: 26%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+.user-profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 2px;
+  position: relative;
+  width: calc(2.2375rem + ((1vw - 7.68px) * 3.9063));
+height: calc(2.2375rem + ((1vw - 7.68px) * 3.9063));
+}
+.user-profile::before, .userpointBg::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.bg-gradient {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380) !important;
+}
+.user-profile img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+.username span {
+  background: #19495b;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  text-shadow: 0 0 10px #132f3b;
+  box-shadow: 0 0 8px #000;
+  font-size: calc(0.4rem + ((1vw - 7.68px) * 0.6944));
+}
+.username p {
+  font-size: 14px;
+  margin-top: -5px !important;
+  position: relative;
+  z-index: 3;
+  font-size: calc(0.6rem + ((1vw - 7.68px) * 0.6944));
+}
+.userpointBg {
+  background: #6b5600;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 3px;
+  position: relative;
+}
+.userpointBg::after {
+  content: "";
+  display: block;
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  background: #6b5600;
+  border-radius: 50%;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 1px;
+  bottom: 0;
+}
+.userpointBg {
+  background: #6b5600;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  left: -24px;
+  transform: rotateX(75deg);
+  bottom: -50px;
+  box-shadow: 0 15px 30px #0c160d;
+  width: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
+height: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
+}
+.baccarat-player {
+  top: -15%;
+  left: 3%;
+}
+.baccarat-player1 {
+  top: 15%;
+}
+.baccarat-player2 {
+  top: 45%;
+}
+.baccarat-player-right {
+  left: auto;
+  right: 3%;
+}
+.userBtn {
+  color: #2a1804;
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 5px 3px #2a1804;
+  position: relative;
+  padding-bottom: 16px;
+  font-weight: 900;
+  font-size: 22px;
+}
+.userBtn i {
+  color: #2a1804;
+  font-size: 18px;
+}
+.userBtn span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background: #2a1804;
+  width: 100%;
+  font-size: 12px;
+}
+.baccarat-player-active img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #2a1c06;
+  position: relative;
+}
+.baccarat-player-active p {
+  background: #2c1f05;
+  border-radius: 25px;
+  font-size: 12px;
+  padding: 2px 25px;
+  margin-left: -30px;
+  padding-left: 35px;
+}
+.baccarat-player-active p strong {
+  color: #f3ff54;
+  font-size: 14px;
+  margin-top: -2px;
+}
+.playerBet img {
+  width: 60px;
+  border: 3px solid #2c1f05;
+  border-radius: 50%;
+  transition: all .1s linear;
+  cursor: pointer;
+  width: calc(2.2375rem + ((1vw - 7.68px) * 3.9063));
+}
+.playerbetpoint {
+  border-radius: 70px 70px 0px 0px;
+  box-shadow: 0 -4px 10px #2a1804;
+}
+.baccaratModal .modal-content {
+  background: #33190c;
+  border: 2px solid #f2cc6d;
+  border-radius: 0;
+}
+.baccaratModal .modal-content .nav-tabs .nav-item button {
+  background: #160801;
+  border: 0;
+  border-radius: 0;
+  color: #766e6a;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.baccaratModal .modal-content .nav-tabs .nav-item {
+  background: #160801; 
+}
+.baccaratModal .modal-content .nav-tabs .nav-item button.active {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380) !important;
+  color: #160801;
+}
+.baccaratModal .modal-content .nav-tabs .nav-item:first-child {
+  border-radius: 25px 0 0 25px;
+}
+.baccaratModal .modal-content .nav-tabs .nav-item:last-child {
+  border-radius: 0px 25px 25px 0px;
+}
+.baccaratModal .tab-content p {
+  font-size: 14px;
+}
+.baccaratModal .modal-dialog {
+  max-width: 82%;
+}
+.baccaratModal .modal-content .btn-close {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380) !important;
+  color: #160801;
+  padding: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  position: absolute;
+  right: -16px;
+  top: -17px;
+}
+.baccaratModal .modal-content .btn-close i {
+  color: #160801;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.modalnoBtn {
+  background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380) !important;
+  border-radius: 25px;
+  border: 0;
+  font-weight: 800;
+  min-width: 100px;
+}
+.baccaratModal .modal-title strong {
+  background: #160801;
+  padding: 0px 38px;
+  border-radius: 47px;
+  font-size: 35px;
+}
+.historymodal-table {
+  border-color: #eec76a;
+}
+.historymodal-table thead {
+  background: #703800;
+}
+.historymodal-table thead tr th {
+  color: #eec76a;
+}
+.winerbet .d-flex div {
+  background: #00230e;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  text-align: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #00230e;
+}
+.winerbet {
+  background: linear-gradient(to top, #193520 2%, #214129, #306141 , #1c3f27, #17321d);
+}
+.winerbet .d-flex {
+  gap: 8px;
+}
+.winerbet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -35%;
+  padding: 10px;
+  border-radius: 6px;
+  width: 240px;
+  margin: 0px auto;
+  box-shadow: 0 1px 13px #467b50;
+  transform: scale(0);
+  transition: all .4s linear;
+  visibility: hidden;
+  z-index: 9;
+}
+.winerbet-bpoint {
+  background: #0e6377 !important;
+  border: 3px solid #fff !important;
+}
+.winerbet-tpoint {
+  background: #663117 !important;
+  border: 3px solid #fff !important;
+}
+.winerbet-ppoint {
+  background: #681653 !important;
+  border: 3px solid #fff !important;
+}
+.winpoint-bottom {
+  margin-top: 10px;
+  background: linear-gradient(to left, transparent, #112116, transparent);
+  padding: 5px 0;
+}
+.winnumberPoint {
+  background: #1a6541 !important;
+  border-color: #1a6541 !important;
+}
+.opentime {
+  font-weight: 700;
+  background: linear-gradient(to bottom, #101d13, #27462e);
+  padding: 2px 5px;
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+.winerbet-open {
+  transform: scale(1);
+  visibility: visible;
+}
+.timer {
+  background: url('../img/timer.png') no-repeat;
+  background-size: cover;
+}
+.timer {
+  background: url('../img/timer.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: -26%;
+  width: 95px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 26px;
+  padding: 14px 8px 0 0;
+}
+.playerBet img:hover {
+  transform: scale(1.3);
+  margin-top: -25px;
+}
+.bankerwins {
+  background: linear-gradient(to left, #101010, #323232, #101010);
+  font-weight: 900;
+  font-size: 18px;
+  padding: 4px 28px;
+  border: 3px solid #cdb05f;
+  border-radius: 6px;
+  left: 0;
+  margin: 0px auto;
+  width: 190px;
+  text-align: center;
+  right: -20%;
+  top: 23%;
+}
+.cardopenpatti {
+  width: 40%;
+  box-shadow: 0 0 8px #000;
+}
+.cardopenpatti:nth-child(2) {
+  top: 31%;
+  left: 32%;
+}
+

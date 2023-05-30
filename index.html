@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Baccarat</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/Fontawsome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ab-header container-fluid py-3">
+  <div class="row justify-content-between">
+    <div class="w-auto d-flex align-items-center">
+        <button class="backbtn me-2 border-0"  data-bs-toggle="modal" data-bs-target="#exitModal"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="d-flex ms-4">
+          <div class="winpoint">
+            <i class="fa-solid fa-trophy"></i>
+            <p class="mb-0"><strong>win</strong><span>400</span></p>
+          </div>
+          <div class="winpoint ms-2">
+            <i>
+            <img src="assets/img/casino-chip.png" />
+          </i>
+            <p class="mb-0"><strong>bet</strong><span>200</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="w-auto d-flex align-items-center">
+      	<button class="backbtn me-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/volume.png" /></button>
+      	<button class="backbtn me-2 border-0 ms-2"><img src="assets/img/info.png" /></button>
+      </div>
+</div>
+</div>
+
+<div class="container-fluid baccarat-table">
+  <div class="h-100 position-relative">
+    <div class="playerCard">
+      <div class="playercard-border w-100">
+      <img src="assets/img/backcard.png" class="w-100" />
+    </div>
+      <p class="userPoint text-uppercase mb-0">
+        Player
+      </p>
+    </div>
+
+    <div class="playerCard bankercard">
+      <div class="playercard-border w-100">
+      <!-- <img src="assets/img/card.png" class="w-100" /> -->
+      <div class="position-relative" style="height: 20.5vh;">
+        <img src="assets/img/card.png" class="position-absolute top-0 cardopenpatti" />
+        <img src="assets/img/card.png" class="position-absolute cardopenpatti" />
+        <img src="assets/img/card.png" class="position-absolute bottom-0 end-0 cardopenpatti" />
+      </div>
+    </div>
+      <p class="userPoint text-uppercase mb-0">
+        Banker
+      </p>
+    </div>
+
+    <div class="d-flex align-items-center playertotalpoint position-absolute justify-content-between">
+    <div class="playerpoint text-center">
+      <h2 class="mb-2">Player</h2>
+      <span>2 : 2 <img class="ms-2" src="assets/img/bet.png" width="30" /></span>
+    </div>
+    <div class="playerpoint text-center">
+      <h2 class="mb-2">Tie</h2>
+      <span>9 : 1</span>
+    </div>
+    <div class="playerpoint text-center">
+      <h2 class="mb-2">Banker</h2>
+      <span>2 : 2</span>
+    </div>
+  </div>
+
+  <div class="baccarat-player position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+
+  <div class="baccarat-player baccarat-player1 position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+
+  <div class="baccarat-player baccarat-player2 position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+
+  <div class="baccarat-player baccarat-player-right position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+
+  <div class="baccarat-player baccarat-player1 baccarat-player-right position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+  
+  <div class="baccarat-player baccarat-player2 baccarat-player-right position-absolute">
+    <div class="user-profile">
+      <img src="assets/img/user.png" />
+    </div>
+    <div class="username">
+      <p class="m-0 text-center">
+        <span class="d-block">Faizal66</span>
+        ₹ 1000.00
+      </p>
+    </div>
+    <div class="userpointBg"></div>
+  </div>
+
+<div class="container position-absolute bottom-0 start-0 end-0 my-auto">
+  <div class="row align-items-top justify-content-center">
+    <div class="w-auto">
+      <button class="userBtn bg-gradient overflow-hidden border-0 rounded-pill">
+        <i class="fa-solid fa-user"></i>
+        <span class="d-block" style="font-weight: 400;">50</span>
+      </button>
+    </div>
+    <div class="col-8">
+      <div class="w-100 bg-gradient py-1 px-5 d-flex align-items-center justify-content-between playerbetpoint">
+        <div class="d-flex baccarat-player-active align-items-center w-auto">
+          <img src="assets/img/user.png" />
+          <p class="mb-0">Guest001<strong class="d-block">5000.00</strong></p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center playerBet">
+          <div class="me-3">
+            <img class="winpointToggle" src="assets/img/bet.png" />
+          </div>
+          <div class="me-3">
+            <img src="assets/img/bet1.png" />
+          </div>
+          <div class="me-3">
+            <img src="assets/img/bet2.png" />
+          </div>
+          <div class="me-3">
+            <img src="assets/img/bet3.png" />
+          </div>
+          <div class="me-3">
+            <img src="assets/img/bet4.png" />
+          </div>
+          <div>
+            <img src="assets/img/bet5.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-auto">
+      <button class="userBtn pb-0 me-2 bg-gradient overflow-hidden border-0 rounded-pill">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <button class="userBtn pb-0 me-2 bg-gradient overflow-hidden border-0 rounded-pill">
+        2X
+      </button>
+      <button class="userBtn pb-0 bg-gradient overflow-hidden border-0 rounded-pill" data-bs-toggle="modal" data-bs-target="#rulesModal">
+        <img src="assets/img/broom.png" />
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="winerbet">
+  <div class="d-flex flex-wrap">
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winerbet-tpoint">T</div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase"></div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winerbet-tpoint">T</div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase"></div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winerbet-tpoint">T</div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase"></div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winerbet-tpoint">T</div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase"></div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winerbet-tpoint">T</div>
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase"></div>
+    <div class="text-uppercase"></div>
+
+  </div>
+  <div class="d-flex flex-wrap justify-content-center winpoint-bottom">
+    <div class="text-uppercase winerbet-ppoint">P</div>
+    <div class="text-uppercase winnumberPoint">50</div>
+    <div class="text-uppercase winerbet-bpoint">b</div>
+    <div class="text-uppercase winnumberPoint">17</div>
+  </div>
+
+  <div class="opentime">
+    Open Time 02
+  </div>
+
+</div>
+
+<div class="timer">
+  16
+</div>
+
+<div class="bankerwins position-absolute">
+  Banker Wins
+</div>
+
+  </div>
+</div>
+
+<!-- Rules Modal -->
+
+<div class="modal fade baccaratModal" id="rulesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-uppercase active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Rules</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">History</button>
+  </li>
+</ul>
+<div class="tab-content mt-4" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <p class="d-block"><strong style="color: #ffee8c;font-size: 18px;">Rules:</strong></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    <p>- Lorem ipsum dolor sit amet,</p>
+    <p>- Lorem ipsum dolor sit amet,</p>
+    <p>- Lorem ipsum dolor sit amet,</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <table class="table table-bordered historymodal-table">
+      <thead>
+        <tr>
+          <th class="text-uppercase">S.NO</th>
+          <th class="text-uppercase">game id</th>
+          <th class="text-uppercase">play</th>
+          <th class="text-uppercase">win</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th class="text-uppercase text-end" colspan="2">Total</th>
+          <th class="text-uppercase">0</th>
+          <th class="text-uppercase">0</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rules Modal -->
+
+<div class="modal fade baccaratModal" id="exitModal" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <h5 class="text-center modal-title"><strong class="text-uppercase">Exit</strong></h5>
+        <p class="text-center mb-0 mt-4"><strong style="font-size: 18px;">Are you sure sou want to leave this game?</strong></p>
+
+
+      </div>
+      <div class="modal-footer border-0 d-flex justify-content-center pt-0">
+        <button type="button" class="btn text-uppercase modalnoBtn" data-bs-dismiss="modal">No</button>
+        <button type="button" class="btn text-uppercase modalnoBtn" style="background: #160801 !important;color: #736b67;">yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<script>
+  $(".winpointToggle").click(function(){
+    $(".winerbet").toggleClass("winerbet-open");
+  });
+</script>
+
+</body>
+</html>
