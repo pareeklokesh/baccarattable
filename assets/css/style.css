@@ -228,14 +228,14 @@ height: calc(2.2375rem + ((1vw - 7.68px) * 3.9063));
 height: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
 }
 .baccarat-player {
-  top: -15%;
+  top: -8%;
   left: 3%;
 }
 .baccarat-player1 {
-  top: 15%;
+  top: 25%;
 }
 .baccarat-player2 {
-  top: 45%;
+  top: 55%;
 }
 .baccarat-player-right {
   left: auto;
@@ -327,7 +327,7 @@ height: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
   font-size: 14px;
 }
 .baccaratModal .modal-dialog {
-  max-width: 82%;
+  max-width: 65%;
 }
 .baccaratModal .modal-content .btn-close {
   background: linear-gradient(to top, #ecb75e 2%, #e59141, #f1d159 , #faf0a0, #e5d380) !important;
@@ -446,18 +446,18 @@ height: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
   background: url('../img/timer.png') no-repeat;
   background-size: contain;
   position: absolute;
-  left: 0;
+  left: 1%;
   right: 0;
   margin: 0px auto;
-  top: -26%;
-  width: 95px;
-  height: 95px;
+  top: -31%;
+  width: 124px;
+  height: 124px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
   font-size: 26px;
-  padding: 14px 8px 0 0;
+  padding: 14px 18px 0 0;
 }
 .playerBet img:hover {
   transform: scale(1.3);
@@ -486,3 +486,126 @@ height: calc(5.7rem + ((1vw - 7.68px) * 3.9063));
   left: 32%;
 }
 
+/* -------------------Menu Css------------------- */
+
+.lobbyMenu {
+  background: #1f1200;
+border: 1px solid #bcaf61 !important;
+  border-radius: 8px 8px 2px 2px;
+  width: 235px;
+  transform: translate(-200%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s linear;
+  z-index: 999;
+}
+.lobbyMenu {
+  padding-top: 0 !important;
+  background: #160002;
+border: 1px solid #fffe00 !important;
+  left: 10px;
+  top: 10px !important;
+}
+.lobbyMenu {
+  width: 270px !important;
+}
+.lobbyMenu-open {
+  transform: translate(0);
+  opacity: 1;
+  visibility: visible;
+}
+.lobbyMenu button {
+  font-size: 16px !important;
+  text-transform: capitalize !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lobbyMenu button {
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  padding: 4px 20px;
+  font-size: 28px;
+  font-weight: 500;
+  border-bottom: 1.9px solid #fffe00 !important;
+  border-radius: 6px 6px 0 0;
+}
+.lobbyMenu button.landscape-block {
+  display: flex !important;
+}
+.lobbyMenu button img {
+  margin-right: 25px;
+}
+.lobbyMenu .lobbyclose-btn {
+  border: 0 !important;
+  background: #f40403;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 0;
+}
+.pokernav-item {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1.9px solid #9f9f43;
+  padding: 8px 30px;
+  transition: all .4s linear;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pokernav-item img, .pokernav-item i {
+  margin-right: 20px;
+  min-width: 24px;
+}
+.lobbyMenu .logout-lobbybtn {
+  background: linear-gradient(#a91a27, #710e15);
+  margin: 0px auto;
+  margin-bottom: 8px;
+  width: auto;
+  text-align: center;
+  margin-top: 8px;
+  border: 0 !important;
+  border-radius: 6px !important;
+  text-transform: uppercase !important;
+  padding: 5px 15px;
+}
+/*.pokernav-item:hover {
+  background: #dcbd7d;
+  color: #1a0a0b;
+}
+.pokernav-item:hover i {
+  color: #1a0a0b;
+}
+.pokernav-item:hover .upcoming-text {
+  color: #1a0a0b;
+}*/
+.upcoming-text {
+  font-size: 10px;
+  color: #cece09;
+  display: block;
+  text-align: right;
+  text-transform: capitalize;
+  margin-top: -3px;
+}
+.lobbyMenu button.menumodaltext {
+  padding: 4px 10px;
+    padding-right: 10px;
+  padding-right: 35px;
+  font-size: 28px !important;
+  text-transform: uppercase !important;
+}
+.lobbyMenu .pokerMenu-list li:last-child .pokernav-item {
+  border-bottom: 0;
+}
+
+/* -------------------Menu Css End!------------------- */

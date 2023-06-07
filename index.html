@@ -9,10 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="ab-header container-fluid py-3">
+<div class="ab-header container-fluid py-3 pt-5">
   <div class="row justify-content-between">
     <div class="w-auto d-flex align-items-center">
-        <button class="backbtn me-2 border-0"  data-bs-toggle="modal" data-bs-target="#exitModal"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="backbtn me-2 border-0 lobbymenuBtn"><i class="fa-solid fa-bars"></i></button>
         
         <div class="d-flex ms-4">
           <div class="winpoint">
@@ -30,6 +30,7 @@
       <div class="w-auto d-flex align-items-center">
       	<button class="backbtn me-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/volume.png" /></button>
       	<button class="backbtn me-2 border-0 ms-2"><img src="assets/img/info.png" /></button>
+        <button class="backbtn me-2 border-0"  data-bs-toggle="modal" data-bs-target="#exitModal"><i class="fa-solid fa-chevron-left"></i></button>
       </div>
 </div>
 </div>
@@ -376,6 +377,42 @@
   </div>
 </div>
 
+<!-- -----------------Menu------------------------- -->
+
+      <div class="lobbyMenu position-fixed top-0">
+        <button class="btn text-uppercase menumodaltext landscape-block">
+          <img src="assets/img/list.png">Menu
+        </button>
+        <button class="lobbyclose-btn" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+
+        <ul class="pokerMenu-list landscape-block mb-0 p-0">
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-forward-step"></i> Resume</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><img src="assets/img/cash.png" width="24">Top up</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><img src="assets/img/switch.png"> Switch Table <span class="upcoming-text">Upcoming</span></a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Stand up <span class="upcoming-text">Upcoming</span></a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Sit out <span class="upcoming-text">Upcoming</span></a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-question"></i> How to play <span class="upcoming-text">Upcoming</span></a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> Exit</a>
+          </li>
+        </ul>
+
+      </div>
+
+<!-- -----------------Menu------------------------- -->
+
 
 
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -385,6 +422,21 @@
   $(".winpointToggle").click(function(){
     $(".winerbet").toggleClass("winerbet-open");
   });
+</script>
+
+<script>
+  $(".lobbymenuBtn").click(function(){
+  $(".lobbyMenu").toggleClass("lobbyMenu-open");
+  });
+  $(".lobbyclose-btn").click(function(){
+    $(".lobbyMenu").removeClass("lobbyMenu-open");
+  });
+  $(".settingsBtn").click(function(){
+  $(".settingpopup").toggleClass("settingpopup-open");
+  });
+  $(".settingpopup button i").click(function(){
+  $(".settingpopup").removeClass("settingpopup-open");
+});
 </script>
 
 </body>
